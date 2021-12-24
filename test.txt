@@ -1,0 +1,2 @@
+SECTION 4.3| This is the beginning of a test where these things can happen, one after the other.
+I don't quite understand! what is happening here but I think there's something to do with how long or large my buffer is.
