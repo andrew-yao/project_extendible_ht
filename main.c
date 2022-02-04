@@ -1,12 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-#define BUFF_SIZE 256
+#define _EXAMPLE_
 
-int main()
+int main_project(int argc, char* argv[]);
+int main_testing(int argc, char* argv[]);
+int main_munit_example(int argc, char* argv[]);
+
+int main(int argc, char* argv[])
 {
-	printf("hello, world!\n");
-
-	return 0;
+	#if defined( _PROJECT_ )
+		return main_project(argc, argv);
+	#elif defined( _TEST_ )
+		return main_testing(argc, argv);
+	#elif defined( _EXAMPLE_ )
+		return main_munit_example(argc, argv);
+	#else
+		printf("no main() defined\n");
+	#endif // _PROJECT_
 }
