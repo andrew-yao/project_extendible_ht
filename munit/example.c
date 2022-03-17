@@ -22,7 +22,8 @@ MunitResult more_assert_examples(const MunitParameter params[], void* data)
 MunitTest test_examples[] = 
 {
 	{ "/assert", assert_examples, NULL, NULL, MUNIT_TEST_OPTION_NONE, NULL },
-	{ "/more-asserts", more_assert_examples, NULL, NULL, MUNIT_TEST_OPTION_NONE, NULL}
+	{ "/more-asserts", more_assert_examples, NULL, NULL, MUNIT_TEST_OPTION_NONE, NULL},
+    NULL
 };
 
 static const MunitSuite assert_suite = 

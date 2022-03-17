@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define _EXAMPLE_
+#define _PROJECT_
 
 int main_project(int argc, char* argv[]);
 int main_testing(int argc, char* argv[]);
